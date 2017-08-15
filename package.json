@@ -1,0 +1,34 @@
+{
+  "name": "event2string",
+  "version": "1.0.0",
+  "description": "Javascript stringifier of Event objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webschik/event2string.git"
+  },
+  "keywords": [
+    "Event",
+    "stringify",
+    "javascript"
+  ],
+  "author": "webschik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webschik/event2string/issues"
+  },
+  "homepage": "https://github.com/webschik/event2string#readme",
+  "jest": {
+    "collectCoverage": false,
+    "testRegex": ".+spec[.]js$",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ]
+  }
+}
