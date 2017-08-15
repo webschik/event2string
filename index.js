@@ -3,18 +3,18 @@ module.exports = function stringifyEvent (event) {
         return '';
     }
 
-    const proto = event.constructor && event.constructor.prototype;
+    var proto = event.constructor && event.constructor.prototype;
 
     if (!proto) {
         // standard stringification
         return JSON.stringify(event);
     }
 
-    const eventInfo = {};
+    var eventInfo = {};
 
-    for (let prop in proto) {
+    for (var prop in proto) {
         if (prop !== 'constructor') {
-            let value = event[prop];
+            var value = event[prop];
 
             if (value instanceof Node) {
                 value = 'Node';
